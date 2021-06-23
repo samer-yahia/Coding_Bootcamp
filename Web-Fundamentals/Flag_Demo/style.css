@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    outline: 1px solid black;
+    margin: 50px auto;
+    padding: 47px 103px;
+}
+
+.circle{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
