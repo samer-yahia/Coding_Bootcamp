@@ -20,6 +20,8 @@
     height: 300px;
     width: 200px;
     background-color: blue;
+    margin-left: 9px;
+    margin-right: 3px;
 }
 
 .main {
@@ -27,8 +29,11 @@
     height: 400px;
     width: 700px;
     background-color: red;
-    padding: 14px;
-    margin: auto 9px;
+    padding: 14px 8px;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-top: 1px;
+    margin-bottom: 10px;
 }
 .sub-content {
     display: inline-block;

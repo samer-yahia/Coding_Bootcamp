@@ -1,0 +1,8 @@
+button {
+    color:black;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}

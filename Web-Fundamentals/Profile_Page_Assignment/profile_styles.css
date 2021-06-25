@@ -1,0 +1,307 @@
+/* ------------------- THIS IS THE START OF NAVBAR CSS ----------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.mainPage, .nav, .nav-links , .colorTop3 , .colorTop4 {
+    display: flex;
+}
+
+.nav {
+    width: auto;
+    height: 60px;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+
+.nav > h1{
+    color:white;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-right: 175px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: rgb(36, 183, 194);
+    box-shadow: 7px 3px black;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px 30px;
+}
+/* 
+ul li a:links {
+
+} */
+
+.topLinks{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+} 
+
+/* ------- Look at during code review. Ask why the links won't work like it would with a.link and a.visited--------- 
+.topLinks:link {
+    color: white;
+    text-decoration: none;
+}
+
+.toplinks:visited {
+    color: white;
+    text-decoration: none;
+} */
+
+/* ------------------- THIS IS THE START OF CARD STYLE CSS ------------------------- */
+
+.rightBar, .leftBar {
+    padding: 15px;
+}
+
+.leftBar {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.rightBar {
+    width: 40%;
+    margin-right: 10%;
+}
+
+/* --------------------Divider for User Card---------------------- */
+.container {
+    width: inherit;
+    height: 350px;
+    position: fixed;
+    display: inline-block;
+    top: 100px;
+    left: 200px;
+    right: 100px;
+}
+
+.colorTop1 {
+    height: 100px;
+    background-color: blue;
+}
+
+#userPhoto {
+    height: 100px;
+    width: 100px;
+    margin-top: 42px;
+    margin-left: 33px;
+    padding: 0px 0px 0px 15px;
+}
+
+.bottom1 {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 44px 17px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom1 > h1 {
+    margin: 0px 0px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom1 > h3 {
+    margin: 5px 5px 5px 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom1 > p {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom1 > a {
+    color: blue;
+}
+
+.pin {
+    height: 30px;
+    width: 16px;
+    margin-left: 13px;
+}
+
+.textPosition {
+    display: inline-flex;
+    vertical-align: text-top;
+    align-items: center;
+    padding: 1px;
+}
+
+#gear {
+    height: 25px;
+    width: 25px;
+    margin: 3px 8px 0px;
+}
+/* ----------------Second Box for Left Bar ------------ */
+.colorTop2 {
+    height: 37px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    text-align: left;
+    padding: 9px 25px 0px;
+}
+
+.colorTop2 > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom2 {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px 17px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom2 > h2 {
+    margin: 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom2 > h3 {
+    margin: 5px 5px 5px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom2 > p {
+    margin: 5px 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* -------------------First Box for Right Bar------------------- */
+.colorTop3 {
+    height: 50x;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 9px 25px 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circleButton {
+    color:black;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.colorTop3 > h2 {
+    margin: 0;
+    padding: 0 0 7px 40px;
+}
+
+.bottom3 {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px 17px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom3 > h2 {
+    margin: 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom3 > h3 {
+    margin: 5px 5px 5px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----- Ask how to push apart evenly and combining .requestName ------- */
+
+.reqRow1 , .reqRow2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.requestName {
+    margin: 5px 70px 0 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.requestPic {
+    width: 50px;
+    height: 50px;
+}
+
+.requestIcons {
+    width: 30px;
+    height: 30px;
+}
+
+/* ------------ Second Box for Right Bar -----------*/
+
+.colorTop4 {
+    height: 50x;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 9px 0px 0px 60px;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colorTop4 > h2 {
+    margin: 0;
+    padding: 0 0 7px 40px;
+}
+
+.bottom4 {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px 17px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom4 > h2 {
+    margin: 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom4 > h3 {
+    margin: 5px 5px 5px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.acceptRow {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.acceptName {
+    margin: 0px 0px 0px 11px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sepRow {
+    border-top: 2px solid black;
+    width: 100%;
+    margin-right: 0px;
+    padding: 15px 0px 0px 0px;
+}
