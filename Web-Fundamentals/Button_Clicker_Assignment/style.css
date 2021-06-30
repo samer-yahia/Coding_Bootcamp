@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.pageContainer {
+    width: 1200px;
+}
+
+.navBar , .mainPage, .classicNinja, .newNinja {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar {
+    width: 1200px;
+    height: 30px;
+    background-color: lightgray;
+    color: black;
+    font-size: 20pt;
+    margin: 0 auto;
+    padding: 25px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainPage {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 25pt;
+}
+
+#logBtn {
+    padding: 15px;
+    width: 74px;
+    border: 3px solid black;
+    background-color: blue;
+    box-shadow: 5px 5px black;
+    color: white;
+}
+
+#logBtn:active {
+    transform: translateY(4px);
+}
+
+input[type=search] {
+    width: 400px;
+    padding: 12px 20px;
+}
+
+/* ------- Main Page Elements ------- */
+
+.leftBar , .rightBar {
+    width: 45%;
+    height: auto;
+}
+
+.classicNinja , .newNinja, .dojonaryBox {
+    width: auto;
+    height: 160px;
+    outline: 2px solid black;
+    margin-bottom: 35px;
+    font-size: 15pt;
+}  
+
+.japaneseBox {
+    padding: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.addDef {
+    padding-right: 65px;
+    padding-top: 53px;
+    width: 212px;
+}
+
+.ninjaButton {
+    padding: 8px;
+    width: 86px;
+    border: 3px solid black;
+    background-color: yellow;
+    box-shadow: 5px 5px black;
+    color: black;
+}
+
+.ninjaButton:active {
+    transform: translateY(4px);
+}
+
+.dojonaryBox {
+    width: 166px;
+    padding: 20px;
+    height: 115px;
+    font-size: 1ppt;
+}
+
+#defButton {
+    background-color: seagreen;
+    color: black;
+    width: 150px;
+    box-shadow: 3px 3px black;
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+#defButton:active {
+    transform: translateY(4px);
+}
