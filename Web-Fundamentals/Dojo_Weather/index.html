@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Nav Bar -->
+        <div class="navBar">
+            <h1>DojoWeather</h1>
+            <h4 onclick="message()">Burbank</h4>
+            <h4 onclick="message()">Chicago</h4>
+            <h4 onclick="message()">Dallas</h4>
+        </div>
+
+        <!-- Main Page -->
+        <div class="mainPage">
+            <div class="header">
+                <h2>San Jose</h2>
+                <div class="tempSelect">
+                    <p>Show temperature in</p>
+                    <select name="Temperature Format" onchange="tempChange(this)">
+                        <option>˚C</option>
+                        <option>˚F</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Weather Carousel -->
+            <div class="banner">
+                <div class="panels">
+                    <h3>Today</h3>
+                    <img src="assets/some_rain.png" alt="Raining Cloud">
+                    <p>Some Rain</p>
+                    <div class="twoTemp">
+                        <p id="red temp">24˚</p>  
+                        <p id="blue temp">18˚</p>  
+                    </div>
+                </div>
+                <div class="panels">
+                    <h3>Today</h3>
+                    <img src="assets/some_sun.png" alt="Raining Cloud">
+                    <p>Some Sun</p>
+                    <div class="twoTemp">
+                        <p id="red temp">27˚</p>  
+                        <p id="blue temp">19˚</p>  
+                    </div>
+                </div>
+                <div class="panels">
+                    <h3>Today</h3>
+                    <img src="assets/some_clouds.png" alt="Raining Cloud">
+                    <p>Some Clouds</p>
+                    <div class="twoTemp">
+                        <p id="red temp">21˚</p>  
+                        <p id="blue temp">16˚</p>  
+                    </div>
+                </div>
+                <div class="panels">
+                    <h3>Today</h3>
+                    <img src="assets/some_sun.png" alt="Raining Cloud">
+                    <p>Some Sun</p>
+                    <div class="twoTemp">
+                        <p id="red temp">26˚</p>  
+                        <p id="blue temp">21˚</p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookie Box -->
+        <div class="cookie">
+            <img src="assets/cookie.png" alt="Cookie Picture">
+            <div>
+                <h4>Stop! Cookie Time!</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize<br>
+                    content and ads, to provide social media features and to <br>
+                    analyze our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button onclick="elimCookie()">I Accept</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
