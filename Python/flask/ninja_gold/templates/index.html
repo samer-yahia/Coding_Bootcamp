@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    <style>
+        .pageContain {
+            width: 1200px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        #goldCount {
+            border: 2px solid black;
+            width: 150px;
+        }
+
+        .banner {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            gap: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pageContain">
+        <!-- Box showing your Gold -->
+        <div class= "yourGold">
+            <p>Your Gold:</p>
+            <p id='goldCount'>{{user_gold}}</p>
+        </div>
+
+        <!--4 Panel Boxes -->
+        <div class='banner'>
+            <div id='farm'>
+                <h6>Farm</h6>
+                <p>(earns 10-20 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='cave'>
+                <h6>Cave</h6>
+                <p>(earns 10-20 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='house'>
+                <h6>House</h6>
+                <p>(earns 2-5 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='casino'>
+                <h6>Casino</h6>
+                <p>(earns 0-50 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                              
+            </div>
+        </div>
+
+        <!-- Activites Box -->
+        <div class="activity">
+            <p>Activities</p>
+            <!-- Add a log of activites here -->
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- NEW CODE BELOW -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    <style>
+        .pageContain {
+            width: 1200px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        #goldCount {
+            border: 2px solid black;
+            width: 150px;
+        }
+
+        .banner {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            gap: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pageContain">
+        <!-- Box showing your Gold -->
+        <div class= "yourGold">
+            <p>Your Gold:</p>
+            <p id='goldCount' placeholder = {{ session[ 'user_gold' ] }}></p>
+        </div>
+
+        <!--4 Panel Boxes -->
+        <div class='banner'>
+            <div id='farm'>
+                <h6>Farm</h6>
+                <p>(earns 10-20 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='cave'>
+                <h6>Cave</h6>
+                <p>(earns 10-20 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='house'>
+                <h6>House</h6>
+                <p>(earns 2-5 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                  
+            </div>
+            <div id='casino'>
+                <h6>Casino</h6>
+                <p>(earns 0-50 golds)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input type="submit" value="Find Gold!"/>
+                </form>                              
+            </div>
+        </div>
+
+        <!-- Activites Box -->
+        <div class="activity">
+            <p>Activities</p>
+            <!-- Add a log of activites here -->
+        </div>
+
+    </div>
+</body>
+</html>

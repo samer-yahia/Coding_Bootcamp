@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="stylesheet" type="text/css" href="stye.css">
+    <style>
+        .pageContainer {
+            width: 1200px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .banner {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .blueBox {
+            background-color: {{color}};
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="pageContainer">
+        <h1>Welcome to the playground! </h1>
+        
+        <div class="banner">
+            {% for box in range(x) %}
+                <div class="blueBox">
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</body>
+</html>
