@@ -65,7 +65,7 @@ class User:
         return self
 
 
-# 
+# Make the user then use chain method to deposit, withdraw, and display account info
 samer = User("Samer", "syahia@dojo.com")
 
 samer.make_deposit(10000).make_withdraw(5000).display_account_info()

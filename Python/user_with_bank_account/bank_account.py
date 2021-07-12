@@ -56,6 +56,3 @@ rashad.deposit(10000).withdraw(2000).withdraw(5000).deposit(3000).withdraw(1000)
 # Ninja Bonus: Use a classmethod to print all instances of a Bank Account's Info
 
 BankAccount.print_all_instance()
-
-
-        
