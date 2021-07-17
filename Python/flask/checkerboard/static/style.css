@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pageContain {
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.checkerBoard {
+    display: flex;
+    justify-content: center;
+}
+
+table tr td {
+    width: 75px;
+    height: 75px;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: black;
+}

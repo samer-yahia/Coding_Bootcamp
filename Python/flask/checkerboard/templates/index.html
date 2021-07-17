@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkerboard</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+
 </head>
 <body>
-    
+    <div class="pageContain">
+        <!-- Div for the main container of the Board -->
+        <div class="checkerBoard">
+            <table>
+            <!-- Nested For loop that allows access to dimensions of the board and the color -->
+            {% for row in range(x) %}
+                <tr>
+                {% for box in range(y) %}
+                    <td class="box{{(row+box)%2+1}}" {%if (row+box)%2+1 == 1 %} style = "background-color:{{color1}};" {% else %} style = "background-color: {{color2}};" {%endif%}></td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
 </body>
 </html>

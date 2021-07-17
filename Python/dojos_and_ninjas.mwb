@@ -1,0 +1,5 @@
+ SELECT * FROM dojos_and_ninjas_schema.dojos;
+ 
+ INSERT INTO dojos (name)
+ VALUES ('Seattle');
+ SELECT * FROM dojos
