@@ -1,4 +1,4 @@
-from mysqlconnection import connectToMySQL
+from flask_app.config.mysqlconnection import connectToMySQL
 
 class User:
     # Data is a dictionary that contains all of the data from a row in the database
@@ -28,8 +28,27 @@ class User:
             all_users.append(cls(row))
         return all_users
 
+
     @classmethod
     def get_one(cls, data):
         query = "SELECT * FROM users WHERE id = %(id)s;"
-        return one_user
+        results= connectToMySQL("users_schema").query_db(query, data)
+        return (cls(results[0]))
+
+
+    @classmethod
+    def update(cls, data):
+        query = """
+        UPDATE users SET first_name = %(first_name)s , last_name = %(last_name)s, email = %(email)s,
+        updated_at = NOW() WHERE id = %(id)s;
+        """
+        results= connectToMySQL("users_schema").query_db(query, data)
+
+
+    @classmethod
+    def delete(cls, data):
+        query = "DELETE FROM users WHERE id = %(id)s;"
+        results= connectToMySQL("users_schema").query_db(query, data)
+        
+
 
