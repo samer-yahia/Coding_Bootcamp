@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>POST REQUESTS</title>
+
+</head>
+<style>
+    .splitContainer {
+        width: 1000px;
+        min-height: 600px;
+        margin-top: 50px;
+        background-color: lightblue;
+    }
+
+    .flex {
+        display: flex;
+    }
+    
+    .form-group {
+        gap: 50px !important;
+    }
+    /*     
+    .signup {
+        text-align: left;
+        padding: 20px;
+    }
+    
+    .login {
+        text-align: right;
+        padding: 20px;
+    } */
+</style>
+
+<body>
+
+    <div class="container splitContainer">
+        <h1>Add New Recipe</h1>
+            <form action="/recipes/create" method="post">
+                <div class="flex">
+                    <div class="leftCol">
+
+
+                        <div>
+                            Name:
+                            <input type="text" name="name" id=""> 
+                            {% for error in get_flashed_messages(category_filter = ["name"]) %} 
+                            <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        <div>
+                            Description:
+                            <input type="text" name="description" id=""> 
+                            {% for error in get_flashed_messages(category_filter = ["description"]) %} 
+                            <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        <div>
+                            Instructions:
+                            <input type="text" name="instruction" id=""> 
+                            {% for error in get_flashed_messages(category_filter = ["instruction"]) %} 
+                            <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        <div>
+                            Date Made On:
+                            <input type="date" name="" id=""> 
+                        </div>
+                        <div>
+                            Under 30 Minutes?
+                            <input type="radio" name="under_30_minutes" id="" value="Yes">
+                            <label for="Yes">Yes</label>
+                            <input type="radio" name="under_30_minutes" id="" value="No">
+                            <label for="No">No</label>
+                            {% for error in get_flashed_messages(category_filter = ["under_30_minutes"]) %} 
+                            <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" style="margin: 10px 0;">Create Recipe</button>
+            </form>
+            <a href="/dashboard" class="btn btn-primary" style="margin: 10px 0;">Dashboard</a>
+        <a href="/logout" class="btn btn-primary" style="margin: 10px 0;">Logout</a>
+
+    </div>
+
+</body>
+
+</html>
